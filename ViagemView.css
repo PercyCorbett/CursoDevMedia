@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.capa {
+    display:none;
+}
+.conteudo-dispositivo {
+    display: block;
+    text-align: center;
+}
+/*.versao1 {
+    display: none;
+    text-align: center;
+}
+.versao2 {
+    display: none;
+    text-align: center;
+}
+.versao3 {
+    display: none;
+    text-align: center;
+}
+.versao4 {
+    display: block;
+    text-align: center;
+}*/
+
+body {
+    background: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.topo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topo-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.topo-titulo {
+    font-size: 24px;
+    color: #5d15d1;
+    margin: 0 0 0 10px;
+}
+.limite-largura {
+    max-width: 1024px;
+}
+/* Area de Pedido */
+.pedido-fundo {
+    width: 100%;
+    height: auto;
+    background-image:url("../viagem/imagens/bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pedido-area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.pedido-cabecalho {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5d15d1;
+}
+
+.pedido-logo {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.pedido-descricao {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 0 5px;
+}
+
+
+.pedido-area-formulario {
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.pedido-subtitulo-formulario {
+    font-size: 22px;
+    margin: 0 0 24px 0px;
+}
+/* Area de Formulario*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+    .formulario label {
+        font-size: 16px;
+    }
+
+    .formulario input, .formulario select {
+        width: 100%;
+        height: 32px;
+        margin: 10px 0;
+    }
+
+    .formulario input {
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    .formulario select {
+        padding: 0 3px;
+    }
+
+.formulario-campo-duplo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .formulario-campo-duplo div {
+        width: calc(50% - 10px);
+    }
+
+.radio {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+    .radio div {
+        display: flex;
+        align-items: center;
+        width: 120px !important;
+    }
+
+    .radio input {
+        width: 15px;
+    }
+
+    .radio label {
+        margin: 0 0 0 8px;
+    }
+
+.formulario button {
+    width: 160px;
+    height: 32px;
+    border: none;
+    background: #5d15d1;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0 0 0;
+    cursor: pointer;
+}
+
+/* Area de Ofertas */
+
+.ofertas-area, .natureza-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-titulo, .natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+    .ofertas-descricao span {
+        font-weight: bold;
+    }
+
+.ofertas-imagens {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .oferta-quatro-imagens figure {
+        position: relative;
+        width: calc(50% - 10px);
+        height: calc(50% - 10px);
+        margin: 0 6px;
+    }
+
+    .oferta-imagem-destaque img, .oferta-quatro-imagens img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgb(0 0 0 / 50%);
+        font-size: 17px;
+        color: #fff;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+/* Area de Natureza*/
+.natureza-duas-imagens {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.natureza-imagem {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+    .natureza-imagem img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .natureza-imagem div {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #fff;
+    }
+
+    .natureza-imagem h3 {
+        font-size: 16px;
+    }
+
+    .natureza-imagem p {
+        color: grey;
+        font-size: 14px;
+        margin: 15px 0 0 0px;
+    }
+
+footer {
+    width: 100%;
+    background: #5d15d1;
+    margin: 32px 0 0 0;
+}/* Area de Rodape*/
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+    .rodape-conteudo h2 {
+        color: #fff;
+        margin: 0 0 15px 0;
+        font-size: 20px;
+    }
+
+    .rodape-conteudo div {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .rodape-conteudo img {
+        width: 18px;
+    }
+
+    .rodape-conteudo span {
+        color: #fff;
+        font-size: 14px;
+        margin: 0 0 0 10px;
+    }
+/* final da versão Inicial Global*/
+/* Ajustado o cabeçalho do Formulario pelo exemplo - Ok */
+/* Erro no logo e montagem de @media - tentando identificar igual responsivo */
+/**/
+/* Invertendo - não funciona */
+/**/
+/* Definição para a Primeira Versão 540 */
+/*@media only screen and (max-width: 540) {
+    .topo {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .limite-largura {
+        max-width: 90%;
+    }
+
+    .conteudo-dispositivo.versao1 {
+        display: block;
+    }
+
+
+    .topo-titulo {
+        font-size: 18px;
+        color: #51d2d1;
+        margin: 0 0 0 10px;
+    }
+}
+/* Fim da Definição para a Primeira Versão */
+/**/
+/* Definição para a Segunda Versão */
+/*@media only screen and (max-width: 768) {
+    .topo {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .limite-largura {
+        max-width: 90%;
+    }
+
+    .pedido-cabecalho {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #be2222;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
+
+    .ofertas-imagens {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oferta-quatro-imagens figure {
+        position: relative;
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .natureza-duas-imagens {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-dispositivo.versao2 {
+        display: block;
+    }
+
+    .topo-titulo {
+        font-size: 20px;
+        color: #552211;
+        margin: 0 0 0 10px;
+    }
+
+/* Fim da Definição para a Segunda Versão 768 */
+/**/
+/* Definição para a Terceira Versão 1100 */
+@media only screen and (max-width: 1100) {
+    .limite-largura {
+        max-width: 90%;
+    }
+
+    .pedido-cabecalho {
+        background: #976f6f;
+    }
+    .topo-titulo {
+        font-size: 22px;
+        color: #3d8f0b;
+        margin: 0 0 0 10px;
+    }
+    header, .capa {
+        display: block;
+    }
+    .formulario button {
+        width: 100%;
+        background: #65320d;
+    }
+}
+/* Fim da Definição para a Terceira Versão */
+/**/
+/* Definição para a Quarta Versão */
+@media only screen and (min-width:1101) {
+    .topo-titulo {
+        font-size: 24px;
+        color: #5d15d1;
+        margin: 0 0 0 10px;
+    }
+     header,  .capa {
+        display: block;
+    }
+}
+
+
+
+
+
+
